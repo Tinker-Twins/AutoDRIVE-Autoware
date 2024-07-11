@@ -100,7 +100,21 @@
 
 ## Citation
 
-We encourage you to read and cite the following paper if you use any part of this work for your research:
+We encourage you to read and cite the following papers if you use any part of this dataset for your research:
+
+#### [Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework](https://arxiv.org/abs/2402.12670)
+```bibtex
+@misc{AutoDRIVE-Autoware-2024,
+title={Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework}, 
+author={Tanmay Vilas Samak and Chinmay Vilas Samak and Venkat Narayan Krovi},
+year={2024},
+eprint={2402.12670},
+archivePrefix={arXiv},
+primaryClass={cs.RO},
+url={https://arxiv.org/abs/2402.12670}, 
+}
+```
+This work has been accepted at **2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).**
 
 #### [AutoDRIVE: A Comprehensive, Flexible and Integrated Digital Twin Ecosystem for Enhancing Autonomous Driving Research and Education](https://arxiv.org/abs/2212.05241)
 ```bibtex
@@ -118,3 +132,23 @@ doi = {10.3390/robotics12030077}
 }
 ```
 This work has been published in **MDPI Robotics.** The open-access publication can be found on [MDPI](https://doi.org/10.3390/robotics12030077).
+
+#### [AutoDRIVE Simulator: A Simulator for Scaled Autonomous Vehicle Research and Education](https://arxiv.org/abs/2103.10030)
+```bibtex
+@inproceedings{AutoDRIVE-Simulator-2021,
+author = {Samak, Tanmay Vilas and Samak, Chinmay Vilas and Xie, Ming},
+title = {AutoDRIVE Simulator: A Simulator for Scaled Autonomous Vehicle Research and Education},
+year = {2021},
+isbn = {9781450390453},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3483845.3483846},
+doi = {10.1145/3483845.3483846},
+booktitle = {2021 2nd International Conference on Control, Robotics and Intelligent System},
+pages = {1–5},
+numpages = {5},
+location = {Qingdao, China},
+series = {CCRIS'21}
+}
+```
+This work has been published in **2021 International Conference on Control, Robotics and Intelligent System (CCRIS).** The publication can be found on [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3483845.3483846).
