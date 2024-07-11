@@ -100,7 +100,7 @@
 
 ## Citation
 
-We encourage you to read and cite the following papers if you use any part of this dataset for your research:
+We encourage you to read and cite the following papers if you use any part of this repository for your research:
 
 #### [Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework](https://arxiv.org/abs/2402.12670)
 ```bibtex
