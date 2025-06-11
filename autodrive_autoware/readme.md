@@ -26,14 +26,14 @@
 
 ## Documentation
 - **Installation:** Autoware stack installation using different options depending upon the required system hardware/software configuration.
-  - [Local Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/install_local.md)
-  - [Docker Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/install_docker.md)
-  - [Jetson Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/install_jetson.md)
+  - [Local Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/install_local.md)
+  - [Docker Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/install_docker.md)
+  - [Jetson Installation Documentation](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/install_jetson.md)
 - **Deployments:** Autoware stack deployment on different vehicles of [AutoDRIVE Ecosystem](https://autodrive-ecosystem.github.io/) across scales and [ODDs](https://en.wikipedia.org/wiki/Operational_design_domain).
-  - [Nigel (Small-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/vehicles/nigel/readme.md)
-  - [F1TENTH (Small-Scale Vehicle - Autonomous Racing)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/vehicles/f1tenth/readme.md)
-  - [Hunter SE (Mid-Scale Vehicle - On-Road & Off-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/vehicles/hunter/readme.md)
-  - [OpenCAV (Full-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/vehicles/opencav/readme.md)
+  - [Nigel (Small-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/nigel/readme.md)
+  - [F1TENTH (Small-Scale Vehicle - Autonomous Racing)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/f1tenth/readme.md)
+  - [Hunter SE (Mid-Scale Vehicle - On-Road & Off-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/hunter/readme.md)
+  - [OpenCAV (Full-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/readme.md)
 
 ---
 
@@ -53,7 +53,7 @@
 
 ## YouTube Playlist
 
-[<img src="https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/main/autodrive_autoware/media/YouTube-Playlist.png">](https://youtube.com/playlist?list=PL5Hd4DIMOmEJgpsPYCoLBGNb_91PZVxgA&si=Yf8V6kpmNTrjAp8y)
+[<img src="https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/media/YouTube-Playlist.png">](https://youtube.com/playlist?list=PL5Hd4DIMOmEJgpsPYCoLBGNb_91PZVxgA&si=Yf8V6kpmNTrjAp8y)
 
 Deployment videos pertaining to [AutoDRIVE-Autoware Integration](https://github.com/Tinker-Twins/AutoDRIVE-Autoware) are available within the [Autoware Playlist](https://youtube.com/playlist?list=PL5Hd4DIMOmEJgpsPYCoLBGNb_91PZVxgA&si=UCN1iTwrKbx51Jry) on [AutoDRIVE Ecosystem's YouTube Channel](https://www.youtube.com/@AutoDRIVE-Ecosystem).
 
