@@ -45,17 +45,16 @@ We encourage you to read and cite the following papers if you use any part of th
 
 #### [Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework](https://arxiv.org/abs/2402.12670)
 ```bibtex
-@misc{AutoDRIVE-Autoware-2024,
+@inproceedings{AutoDRIVE-Autoware-2024,
+author={Samak, Tanmay Vilas and Samak, Chinmay Vilas and Krovi, Venkat Narayan},
+booktitle={2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)}, 
 title={Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework}, 
-author={Tanmay Vilas Samak and Chinmay Vilas Samak and Venkat Narayan Krovi},
 year={2024},
-eprint={2402.12670},
-archivePrefix={arXiv},
-primaryClass={cs.RO},
-url={https://arxiv.org/abs/2402.12670}, 
+pages={1068-1075},
+doi={10.1109/AIM55361.2024.10637205}
 }
 ```
-This work has been accepted at **2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).**
+This work has been accepted at **2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).** The publication can be found on [IEEE Xplore](https://doi.org/10.1109/AIM55361.2024.10637205).
 
 #### [AutoDRIVE: A Comprehensive, Flexible and Integrated Digital Twin Ecosystem for Enhancing Autonomous Driving Research and Education](https://arxiv.org/abs/2212.05241)
 ```bibtex
