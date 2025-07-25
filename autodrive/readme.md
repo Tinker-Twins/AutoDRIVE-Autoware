@@ -2,59 +2,27 @@
 <img src="media/AutoDRIVE-Logo.png" alt="AutoDRIVE" width="478"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="media/Autoware-Logo.png" alt="Autoware" width="478"/>
 </p>
 
----
-
-## Team
-
-<img align="left" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px" width="175px" src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Group/Tinker_Twins.png">
-
-**Tinker Twins:** [Chinmay Samak](https://www.linkedin.com/in/samakchinmay) and [Tanmay Samak](https://in.linkedin.com/in/samaktanmay) are twin brothers, who use "Tinker Twins" as a personal brand (the team's name was therefore decided to reflect the same brand). The twins have come a long way tinkering with various tools and technologies, which has strengthened their scientific knowledge and skills. The duo has worked on various projects ranging from microelectromechanical systems (MEMS) to in-orbit space settlements, and almost everything in between. They have a particularly keen interest in the field of robotics and autonomous systems, and are specializing in the field of autonomous vehicles.
-
-#
-
-<img align="left" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px" width="175px" src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Group/Chinmay_Samak.png">
-
-**Chinmay Samak:** I received the [B.Tech. degree in Mechatronics Engineering](https://www.srmist.edu.in/program/b-tech-mechatronics-engineering/) with a gold medal from [SRM Institute of Science and Technology](https://www.srmist.edu.in/) in 2021. Having worked on several research projects in the field of autonomous vehicles, complemented with a solid background in mechatronics engineering, I have joined [ARMLab](http://cecas.clemson.edu/armlab-cuicar) at [CU-ICAR](https://cuicar.com/) as a direct Ph.D. candidate under the supervision of [Dr. Venkat Krovi](https://www.linkedin.com/in/venkatnkrovi) to pursue focused research in the field of vehicle automation. My research interests lie at the intersection of physics-informed and data-driven methods to bridge the sim2real gap using digital twins. I am contributing towards projects such as [VIPR-GS](https://cecas.clemson.edu/VIPR-GS/), [OpenCAV](https://sites.google.com/view/opencav/), [AutoDRIVE](https://autodrive-ecosystem.github.io/), [F1Tenth](https://f1tenth.org/) and [Autoware](https://autoware.org/).
-
-#
-
-<img align="left" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px" width="175px" src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Group/Tanmay_Samak.png">
-
-**Tanmay Samak:** I received the [B.Tech. degree in Mechatronics Engineering](https://www.srmist.edu.in/program/b-tech-mechatronics-engineering/) with a silver medal from [SRM Institute of Science and Technology](https://www.srmist.edu.in/) in 2021. Having worked on several research projects in the field of autonomous vehicles, complemented with a solid background in mechatronics engineering, I have joined [ARMLab](http://cecas.clemson.edu/armlab-cuicar) at [CU-ICAR](https://cuicar.com/) as a direct Ph.D. candidate under the supervision of [Dr. Venkat Krovi](https://www.linkedin.com/in/venkatnkrovi) to pursue focused research in the field of vehicle automation. My research interests lie at the intersection of real and virtual worlds to create physically and graphically accurate digital twins. I am contributing towards projects such as [VIPR-GS](https://cecas.clemson.edu/VIPR-GS/), [OpenCAV](https://sites.google.com/view/opencav/), [AutoDRIVE](https://autodrive-ecosystem.github.io/), [F1Tenth](https://f1tenth.org/) and [Autoware](https://autoware.org/).
-
----
+![Github Stars](https://img.shields.io/github/stars/Tinker-Twins/AutoDRIVE-Autoware?style=flat&color=blue&label=stars&logo=github&logoColor=white)
+![Github Forks](https://img.shields.io/github/forks/Tinker-Twins/AutoDRIVE-Autoware?style=flat&color=blue&label=forks&logo=github&logoColor=white)
+![Github Downloads](https://img.shields.io/github/downloads/Tinker-Twins/AutoDRIVE-Autoware/total?style=flat&color=blue&label=downloads&logo=github&logoColor=white)
+[![Docker Stars](https://badgen.net/docker/stars/autodriveecosystem/autodrive_autoware?icon=docker&label=stars)](https://hub.docker.com/r/autodriveecosystem/autodrive_autoware/)
+[![Docker Pulls](https://badgen.net/docker/pulls/autodriveecosystem/autodrive_autoware?icon=docker&label=pulls)](https://hub.docker.com/r/autodriveecosystem/autodrive_autoware/)
 
 ## Documentation
-- **Installation:** [Autoware Stack Installation Documentation](install.md)
-- **Deployments:** Autoware stack deployment on different vehicles of [AutoDRIVE Ecosystem](https://autodrive-ecosystem.github.io/) across scales and [ODDs](https://en.wikipedia.org/wiki/Operational_design_domain).
-  - [Nigel (Small-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/nigel/readme.md)
-  - [F1TENTH (Small-Scale Vehicle - Autonomous Racing)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/f1tenth/readme.md)
-  - [Hunter SE (Mid-Scale Vehicle - On-Road & Off-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/hunter/readme.md)
-  - [OpenCAV (Full-Scale Vehicle - On-Road Navigation)](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/readme.md)
 
----
+In order to set up the stack yourselves and run the demo examples, please refer to the [Installation Documentation](install.md).
 
-## Deployments
+## Docker Image
 
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-Nigel-TinyTown-Simulator/Replay-Nigel.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-Nigel-TinyTown-Simulator/Replay-Autoware.gif" width="478"> |
-| :-----------------: | :-----------------: |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-Nigel-ARMLab-Testbed/Replay-Nigel.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-Nigel-ARMLab-Testbed/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-F1TENTH-PortoTrack-Simulator/Replay-F1TENTH.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-F1TENTH-PortoTrack-Simulator/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-F1TENTH-ARMLab-Testbed/Replay-F1TENTH.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-F1TENTH-ARMLab-Testbed/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-HunterSE-TinyTown-Simulator/Replay-HunterSE.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-HunterSE-TinyTown-Simulator/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-HunterSE-Forest-Simulator/Replay-HunterSE.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-HunterSE-Forest-Simulator/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-OpenCAV-TinyTown-Simulator/Replay-OpenCAV.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-OpenCAV-TinyTown-Simulator/Replay-Autoware.gif" width="478"> |
-| <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-OpenCAV-City-Simulator/Replay-OpenCAV.gif" width="478"> | <img src="https://github.com/Tinker-Twins/Scaled-Autonomous-Vehicles/blob/main/Project%20Media/AutoDRIVE-OpenCAV-City-Simulator/Replay-Autoware.gif" width="478"> |
-
----
+Docker images pertaining to [AutoDRIVE-Autoware Integration](https://github.com/Tinker-Twins/AutoDRIVE-Autoware) are available within the [AutoDRIVE-Autoware Repository](https://hub.docker.com/r/autodriveecosystem/autodrive_autoware) on [AutoDRIVE Ecosystem's Docker Hub](https://hub.docker.com/u/autodriveecosystem).
 
 ## YouTube Playlist
 
-[<img src="https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/media/YouTube-Playlist.png">](https://youtube.com/playlist?list=PL5Hd4DIMOmEJgpsPYCoLBGNb_91PZVxgA&si=Yf8V6kpmNTrjAp8y)
-
 Deployment videos pertaining to [AutoDRIVE-Autoware Integration](https://github.com/Tinker-Twins/AutoDRIVE-Autoware) are available within the [Autoware Playlist](https://youtube.com/playlist?list=PL5Hd4DIMOmEJgpsPYCoLBGNb_91PZVxgA&si=UCN1iTwrKbx51Jry) on [AutoDRIVE Ecosystem's YouTube Channel](https://www.youtube.com/@AutoDRIVE-Ecosystem).
 
----
+## Contributors
+
+If you are curious to know more about the contributers or connect with them, please refer to the [Contributors Documentation](contributors.md).
 
 ## Citation
 
@@ -62,17 +30,16 @@ We encourage you to read and cite the following papers if you use any part of th
 
 #### [Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework](https://arxiv.org/abs/2402.12670)
 ```bibtex
-@misc{AutoDRIVE-Autoware-2024,
+@inproceedings{AutoDRIVE-Autoware-2024,
+author={Samak, Tanmay Vilas and Samak, Chinmay Vilas and Krovi, Venkat Narayan},
+booktitle={2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)}, 
 title={Towards Validation of Autonomous Vehicles Across Scales using an Integrated Digital Twin Framework}, 
-author={Tanmay Vilas Samak and Chinmay Vilas Samak and Venkat Narayan Krovi},
 year={2024},
-eprint={2402.12670},
-archivePrefix={arXiv},
-primaryClass={cs.RO},
-url={https://arxiv.org/abs/2402.12670}, 
+pages={1068-1075},
+doi={10.1109/AIM55361.2024.10637205}
 }
 ```
-This work has been accepted at **2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).**
+This work has been accepted at **2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM).** The publication can be found on [IEEE Xplore](https://doi.org/10.1109/AIM55361.2024.10637205).
 
 #### [AutoDRIVE: A Comprehensive, Flexible and Integrated Digital Twin Ecosystem for Enhancing Autonomous Driving Research and Education](https://arxiv.org/abs/2212.05241)
 ```bibtex

@@ -1,4 +1,4 @@
-# Installation Guide
+# Installation Documentation
 
 > [!NOTE]
 > - Installation was tested with a workstation running Ubuntu 22.04, NVIDIA Driver 575.64.03, Docker Engine 28.3.2, and NVIDIA Container Toolkit 1.17.8.
