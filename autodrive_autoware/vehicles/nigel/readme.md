@@ -4,7 +4,7 @@
 
 ## Digital Twin Simulation Demo - AutoDRIVE Simulator
 
-1. Launch AutoDRIVE Simulator for Nigel and establish Autoware API bridge connection in single or distributed computing setting as applicable.
+1. Launch [AutoDRIVE Simulator for Nigel in Tiny Town](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/releases/download/v0.1.1/AutoDRIVE-Nigel-TinyTown.zip) and establish Autoware API bridge connection in single or distributed computing setting as applicable.
 2. Install the `rviz_imu_plugin` package (if not already accomplished) using Ubuntu's [Advanced Packaging Tool (APT)](https://en.wikipedia.org/wiki/APT_(software)).
     ```bash
     user@host-pc:~$ sudo apt install ros-$ROS_DISTRO-rviz-imu-plugin
