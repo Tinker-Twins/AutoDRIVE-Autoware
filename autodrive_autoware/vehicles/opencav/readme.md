@@ -6,7 +6,7 @@
 
 > **Note:** Make sure that lines [351-355](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py#L351-L355) and line [363](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py#L363) of [`autodrive_opencav/autodrive_incoming_bridge.py`](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py) script are uncommented. If not, uncomment these lines and re-build the `autodrive_opencav` package using `colcon build --packages-select autodrive_opencav --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release` command from the top of `autoware_local` workspace.
 
-1. Launch AutoDRIVE Simulator for OpenCAV and establish Autoware API bridge connection in single or distributed computing setting as applicable.
+1. Launch [AutoDRIVE Simulator for OpenCAV in Tiny Town](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/releases/download/v0.1.1/AutoDRIVE-OpenCAV-TinyTown.zip) and establish Autoware API bridge connection in single or distributed computing setting as applicable.
 2. Install the `rviz_imu_plugin` package (if not already accomplished) using Ubuntu's [Advanced Packaging Tool (APT)](https://en.wikipedia.org/wiki/APT_(software)).
     ```bash
     user@host-pc:~$ sudo apt install ros-$ROS_DISTRO-rviz-imu-plugin
@@ -57,7 +57,7 @@
 
 > **Note:** Make sure that lines [351-355](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py#L351-L355) and line [363](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py#L363) of [`autodrive_opencav/autodrive_incoming_bridge.py`](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/blob/autodrive_galactic/autodrive_autoware/vehicles/opencav/autodrive_opencav/autodrive_incoming_bridge.py) script are commented out. If not, comment out these lines and re-build the `autodrive_opencav` package using `colcon build --packages-select autodrive_opencav --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release` command from the top of `autoware_local` workspace.
 
-1. Launch AutoDRIVE Simulator for OpenCAV and establish Autoware API bridge connection in single or distributed computing setting as applicable.
+1. Launch [AutoDRIVE Simulator for OpenCAV in City](https://github.com/Tinker-Twins/AutoDRIVE-Autoware/releases/download/v0.1.1/AutoDRIVE-OpenCAV-City.zip) and establish Autoware API bridge connection in single or distributed computing setting as applicable.
 2. Install the `rviz_imu_plugin` package (if not already accomplished) using Ubuntu's [Advanced Packaging Tool (APT)](https://en.wikipedia.org/wiki/APT_(software)).
     ```bash
     user@host-pc:~$ sudo apt install ros-$ROS_DISTRO-rviz-imu-plugin
