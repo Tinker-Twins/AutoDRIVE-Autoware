@@ -38,8 +38,8 @@ from sensor_msgs.msg import JointState, Imu, LaserScan, Image # JointState, Imu,
 from tf_transformations import quaternion_from_euler # Euler angle representation to quaternion representation
 from threading import Thread # Thread-based parallelism
 
-# Python mudule imports
-from cv_bridge import CvBridge # ROS bridge for opencv library to handle images
+# Python module imports
+from cv_bridge import CvBridge # ROS bridge for OpenCV library to handle images
 from gevent import pywsgi # Pure-Python gevent-friendly WSGI server
 from geventwebsocket.handler import WebSocketHandler # Handler for WebSocket messages and lifecycle events
 import socketio # Socket.IO realtime client and server
@@ -301,7 +301,7 @@ def bridge(sid, data):
         publish_ips_data(autodrive.position)
         # IMU
         publish_imu_data(autodrive.orientation_quaternion, autodrive.angular_velocity, autodrive.linear_acceleration)
-        # Cooordinate transforms
+        # Coordinate transforms
         broadcast_transform(msg_transform, transform_broadcaster, "roboracer_1", "world", autodrive.position, autodrive.orientation_quaternion) # Vehicle frame defined at center of rear axle
         broadcast_transform(msg_transform, transform_broadcaster, "left_encoder", "roboracer_1", np.asarray([0.0, 0.12, 0.0]), quaternion_from_euler(0.0, 120*autodrive.encoder_angles[0]%6.283, 0.0))
         broadcast_transform(msg_transform, transform_broadcaster, "right_encoder", "roboracer_1", np.asarray([0.0, -0.12, 0.0]), quaternion_from_euler(0.0, 120*autodrive.encoder_angles[1]%6.283, 0.0))
@@ -338,41 +338,6 @@ def bridge(sid, data):
 # AUTODRIVE ROS 2 BRIDGE INFRASTRUCTURE
 #########################################################
 
-# def timer_callback():
-#     global autodrive
-#     # Actuator feedbacks
-#     publish_actuator_feedbacks(autodrive.throttle, autodrive.steering)
-#     # Speed
-#     publish_speed_data(autodrive.speed)
-#     # Wheel encoders
-#     publish_encoder_data(autodrive.encoder_angles)
-#     # IPS
-#     publish_ips_data(autodrive.position)
-#     # IMU
-#     publish_imu_data(autodrive.orientation_quaternion, autodrive.angular_velocity, autodrive.linear_acceleration)
-#     # Cooordinate transforms
-#     broadcast_transform(msg_transform, transform_broadcaster, "roboracer_1", "world", autodrive.position, autodrive.orientation_quaternion) # Vehicle frame defined at center of rear axle
-#     broadcast_transform(msg_transform, transform_broadcaster, "left_encoder", "roboracer_1", np.asarray([0.0, 0.12, 0.0]), quaternion_from_euler(0.0, 120*autodrive.encoder_angles[0]%6.283, 0.0))
-#     broadcast_transform(msg_transform, transform_broadcaster, "right_encoder", "roboracer_1", np.asarray([0.0, -0.12, 0.0]), quaternion_from_euler(0.0, 120*autodrive.encoder_angles[1]%6.283, 0.0))
-#     broadcast_transform(msg_transform, transform_broadcaster, "ips", "roboracer_1", np.asarray([0.08, 0.0, 0.055]), np.asarray([0.0, 0.0, 0.0, 1.0]))
-#     broadcast_transform(msg_transform, transform_broadcaster, "imu", "roboracer_1", np.asarray([0.08, 0.0, 0.055]), np.asarray([0.0, 0.0, 0.0, 1.0]))
-#     broadcast_transform(msg_transform, transform_broadcaster, "lidar", "roboracer_1", np.asarray([0.2733, 0.0, 0.096]), np.asarray([0.0, 0.0, 0.0, 1.0]))
-#     broadcast_transform(msg_transform, transform_broadcaster, "front_camera", "roboracer_1", np.asarray([-0.015, 0.0, 0.15]), np.asarray([0, 0.0871557, 0, 0.9961947]))
-#     broadcast_transform(msg_transform, transform_broadcaster, "front_left_wheel", "roboracer_1", np.asarray([0.33, 0.118, 0.0]), quaternion_from_euler(0.0, 0.0, np.arctan((2*0.141537*np.tan(autodrive.steering))/(2*0.141537-2*0.0765*np.tan(autodrive.steering)))))
-#     broadcast_transform(msg_transform, transform_broadcaster, "front_right_wheel", "roboracer_1", np.asarray([0.33, -0.118, 0.0]), quaternion_from_euler(0.0, 0.0, np.arctan((2*0.141537*np.tan(autodrive.steering))/(2*0.141537+2*0.0765*np.tan(autodrive.steering)))))
-#     broadcast_transform(msg_transform, transform_broadcaster, "rear_left_wheel", "roboracer_1", np.asarray([0.0, 0.118, 0.0]), quaternion_from_euler(0.0, autodrive.encoder_angles[0]%6.283, 0.0))
-#     broadcast_transform(msg_transform, transform_broadcaster, "rear_right_wheel", "roboracer_1", np.asarray([0.0, -0.118, 0.0]), quaternion_from_euler(0.0, autodrive.encoder_angles[1]%6.283, 0.0))
-#     # LIDAR
-#     publish_lidar_scan(autodrive.lidar_scan_rate, autodrive.lidar_range_array, autodrive.lidar_intensity_array)
-#     # Cameras
-#     publish_camera_images(autodrive.front_camera_image)
-#     # Lap data
-#     publish_lap_count_data(autodrive.lap_count)
-#     publish_lap_time_data(autodrive.lap_time)
-#     publish_last_lap_time_data(autodrive.last_lap_time)
-#     publish_best_lap_time_data(autodrive.best_lap_time)
-#     publish_collision_count_data(autodrive.collision_count)
-
 def main():
     # Global declarations
     global autodrive, autodrive_bridge, cv_bridge, publishers, transform_broadcaster
@@ -386,7 +351,7 @@ def main():
         history=QoSHistoryPolicy.KEEP_LAST, # Keep/store only up to last N samples
         depth=1 # Queue (buffer) size/depth (only honored if the “history” policy was set to “keep last”)
         )
-    cv_bridge = CvBridge() # ROS bridge object for opencv library to handle image data
+    cv_bridge = CvBridge() # ROS bridge object for OpenCV library to handle image data
     transform_broadcaster = tf2_ros.TransformBroadcaster(autodrive_bridge) # Initialize transform broadcaster
     publishers = {e.name: autodrive_bridge.create_publisher(e.type, e.topic, qos_profile)
                   for e in config.pub_sub_dict.publishers} # Publishers
@@ -397,12 +362,9 @@ def main():
     } # Subscriber callback functions
     [autodrive_bridge.create_subscription(e.type, e.topic, callbacks[e.topic], qos_profile) for e in config.pub_sub_dict.subscribers] # Subscribers
 
-    # timer_period = 0.025 # Timer period in seconds
-    # autodrive_bridge.create_timer(timer_period, timer_callback)
-
     # If num_threads is not specified then num_threads will be multiprocessing.cpu_count() if it is implemented
-    # Otherwise it will use a single thread
-    executor = rclpy.executors.MultiThreadedExecutor() # Create executor to control which threads callbacks get executed in
+    # Otherwise, it will use a single thread
+    executor = rclpy.executors.MultiThreadedExecutor() # Create executor to control which thread callbacks get executed
     executor.add_node(autodrive_bridge) # Add node whose callbacks should be managed by this executor
 
     process = Thread(target=executor.spin, daemon=True) # Runs callbacks in the thread
