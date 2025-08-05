@@ -197,6 +197,8 @@ sudo ./docker/run.sh --map-path ../autoware_map/sample-map-planning --data-path 
 
     git commit -m "COMMIT_MESSAGE"
 
+    git pull
+    
     git push
     ```
 
