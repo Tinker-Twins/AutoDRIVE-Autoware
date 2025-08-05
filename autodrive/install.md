@@ -210,6 +210,8 @@ sudo ./docker/run.sh --map-path ../autoware_map/sample-map-planning --data-path 
 
     git commit -m "AutoDRIVE-Autoware"
 
+    git pull
+
     git push
     ```
 
